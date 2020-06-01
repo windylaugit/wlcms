@@ -1,0 +1,2842 @@
+==29268== Memcheck, a memory error detector
+==29268== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29268== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==29268== Command: php vendor/yurunsoft/imi/bin/imi.php server/start
+==29268== Parent PID: 4779
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x849DFA: zend_get_constant_impl (zend_constants.c:279)
+==29268==    by 0x82D6BF: zend_ini_get_constant (zend_ini_parser.c:223)
+==29268==    by 0x82D6BF: ini_parse (zend_ini_parser.c:1987)
+==29268==    by 0x82DDDC: zend_parse_ini_file (zend_ini_parser.c:309)
+==29268==    by 0x80369F: php_init_config (php_ini.c:630)
+==29268==    by 0x7FCFAA: php_module_startup (main.c:2279)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86581B: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86581B: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86581B: _zend_hash_add_or_update_i (zend_hash.c:670)
+==29268==    by 0x86581B: zend_hash_update (zend_hash.c:817)
+==29268==    by 0x802C33: php_ini_parser_cb (php_ini.c:239)
+==29268==    by 0x82D874: ini_parse (zend_ini_parser.c:1736)
+==29268==    by 0x82DDDC: zend_parse_ini_file (zend_ini_parser.c:309)
+==29268==    by 0x80369F: php_init_config (php_ini.c:630)
+==29268==    by 0x7FCFAA: php_module_startup (main.c:2279)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x7FCFC3: php_module_startup (main.c:2284)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x7FCFC3: php_module_startup (main.c:2284)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x7FCFC8: php_module_startup (main.c:2287)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x7FCFC8: php_module_startup (main.c:2287)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85D89B: zend_register_functions (zend_API.c:2283)
+==29268==    by 0x85EAE5: do_register_internal_class (zend_API.c:2727)
+==29268==    by 0x85EF8D: zend_register_internal_class_ex (zend_API.c:2747)
+==29268==    by 0x878824: zend_register_default_exception (zend_exceptions.c:827)
+==29268==    by 0x88CA6D: zend_register_default_classes (zend_default_classes.c:32)
+==29268==    by 0x86C586: zm_startup_core (zend_builtin_functions.c:307)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x862896: zval_make_interned_string (zend_API.c:3697)
+==29268==    by 0x862896: zend_declare_property_ex (zend_API.c:3723)
+==29268==    by 0x862A97: zend_declare_property (zend_API.c:3793)
+==29268==    by 0x862C43: zend_declare_property_string (zend_API.c:3840)
+==29268==    by 0x87886A: zend_register_default_exception (zend_exceptions.c:831)
+==29268==    by 0x88CA6D: zend_register_default_classes (zend_default_classes.c:32)
+==29268==    by 0x86C586: zm_startup_core (zend_builtin_functions.c:307)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x8627FF: zend_declare_property_ex (zend_API.c:3768)
+==29268==    by 0x862A97: zend_declare_property (zend_API.c:3793)
+==29268==    by 0x862C43: zend_declare_property_string (zend_API.c:3840)
+==29268==    by 0x87888C: zend_register_default_exception (zend_exceptions.c:832)
+==29268==    by 0x88CA6D: zend_register_default_classes (zend_default_classes.c:32)
+==29268==    by 0x86C586: zm_startup_core (zend_builtin_functions.c:307)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x86282A: zend_declare_property_ex (zend_API.c:3780)
+==29268==    by 0x862A97: zend_declare_property (zend_API.c:3793)
+==29268==    by 0x862C43: zend_declare_property_string (zend_API.c:3840)
+==29268==    by 0x878A10: zend_register_default_exception (zend_exceptions.c:849)
+==29268==    by 0x88CA6D: zend_register_default_classes (zend_default_classes.c:32)
+==29268==    by 0x86C586: zm_startup_core (zend_builtin_functions.c:307)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x4520FE: zm_startup_date (php_date.c:892)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x862E2B: zval_make_interned_string (zend_API.c:3697)
+==29268==    by 0x862E2B: zend_declare_class_constant_ex (zend_API.c:3869)
+==29268==    by 0x862FD3: zend_declare_class_constant (zend_API.c:3905)
+==29268==    by 0x86314E: zend_declare_class_constant_stringl (zend_API.c:3952)
+==29268==    by 0x451A81: date_register_classes (php_date.c:2130)
+==29268==    by 0x452103: zm_startup_date (php_date.c:893)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x5B2529: zm_startup_zlib (zlib.c:1543)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x5B4A0F: zm_startup_bcmath (bcmath.c:167)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x5B4A0F: zm_startup_bcmath (bcmath.c:167)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x85CC00: zend_hash_find_ptr (zend_hash.h:792)
+==29268==    by 0x85CC00: zend_startup_module_ex (zend_API.c:1853)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x862764: zend_hash_find_ptr (zend_hash.h:792)
+==29268==    by 0x862764: zend_declare_property_ex (zend_API.c:3744)
+==29268==    by 0x862A97: zend_declare_property (zend_API.c:3793)
+==29268==    by 0x862B77: zend_declare_property_long (zend_API.c:3822)
+==29268==    by 0x5C5F25: zm_startup_dom (php_dom.c:616)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86715D: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86715D: zend_hash_del (zend_hash.c:1235)
+==29268==    by 0x862982: zend_declare_property_ex (zend_API.c:3748)
+==29268==    by 0x862A97: zend_declare_property (zend_API.c:3793)
+==29268==    by 0x862B77: zend_declare_property_long (zend_API.c:3822)
+==29268==    by 0x5C5F25: zm_startup_dom (php_dom.c:616)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86562A: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86562A: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86562A: _zend_hash_add_or_update_i (zend_hash.c:670)
+==29268==    by 0x86562A: zend_hash_add (zend_hash.c:812)
+==29268==    by 0x805CA5: zend_hash_add_mem (zend_hash.h:646)
+==29268==    by 0x805CA5: sapi_register_post_entry (SAPI.c:956)
+==29268==    by 0x805D61: sapi_register_post_entries (SAPI.c:938)
+==29268==    by 0x67689E: OnUpdate_mbstring_encoding_translation (mbstring.c:1465)
+==29268==    by 0x871AFE: zend_register_ini_entries (zend_ini.c:267)
+==29268==    by 0x670E00: zm_startup_mbstring (mbstring.c:1601)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x6D7055: zm_startup_session (session.c:2942)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x6D7055: zm_startup_session (session.c:2942)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x769B09: zm_startup_file (file.c:179)
+==29268==    by 0x7610B2: zm_startup_basic (basic_functions.c:3689)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x7AAE6F: zm_startup_url_scanner_ex (url_scanner_ex.c:1342)
+==29268==    by 0x7611A0: zm_startup_basic (basic_functions.c:3722)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x68F301: pdo_dbh_init (pdo_dbh.c:1386)
+==29268==    by 0x68B9D8: zm_startup_pdo (pdo.c:352)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x7F52BF: zm_startup_mysqlnd (php_mysqlnd.c:253)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x7F52BF: zm_startup_mysqlnd (php_mysqlnd.c:253)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x85EF8D: zend_register_internal_class_ex (zend_API.c:2747)
+==29268==    by 0x6C2FF1: phar_object_init (phar_object.c:5436)
+==29268==    by 0x6B07AA: zm_startup_phar (phar.c:3453)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x6CCE4B: zm_startup_reflection (php_reflection.c:6638)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x6EE41D: zm_startup_soap (soap.c:642)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x6EE41D: zm_startup_soap (soap.c:642)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x6EE461: zm_startup_soap (soap.c:650)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x6EE4E9: zm_startup_soap (soap.c:658)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x6EE57B: zm_startup_soap (soap.c:666)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x6EE5C6: zm_startup_soap (soap.c:669)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x871BFA: zend_register_ini_entries (zend_ini.c:261)
+==29268==    by 0x67E106: zm_startup_mysqli (mysqli.c:560)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x871BA7: zend_register_ini_entries (zend_ini.c:258)
+==29268==    by 0x67E106: zm_startup_mysqli (mysqli.c:560)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x7CC81E: zm_startup_xmlreader (php_xmlreader.c:1309)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85EB0F: do_register_internal_class (zend_API.c:2731)
+==29268==    by 0x7D6971: zm_startup_xmlwriter (php_xmlwriter.c:1858)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119AC93C: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119AC93C: zm_startup_swoole (swoole.cc:813)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119ACA5B: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119ACA5B: zm_startup_swoole (swoole.cc:818)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A082A1: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A082A1: swoole_server_init (swoole_server.cc:491)
+==29268==    by 0x119ACBD8: zm_startup_swoole (swoole.cc:836)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A083C3: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A083C3: swoole_server_init (swoole_server.cc:496)
+==29268==    by 0x119ACBD8: zm_startup_swoole (swoole.cc:836)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A08516: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A08516: swoole_server_init (swoole_server.cc:503)
+==29268==    by 0x119ACBD8: zm_startup_swoole (swoole.cc:836)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A0F6B5: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A0F6B5: swoole_server_port_init (swoole_server_port.cc:88)
+==29268==    by 0x119ACBDF: zm_startup_swoole (swoole.cc:837)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119B4389: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119B4389: swoole_client_init (swoole_client.cc:275)
+==29268==    by 0x119ACBE6: zm_startup_swoole (swoole.cc:838)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A139BE: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A139BE: swoole_socket_coro_init (swoole_socket_coro.cc:800)
+==29268==    by 0x119ACBED: zm_startup_swoole (swoole.cc:839)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A13A5C: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A13A5C: swoole_socket_coro_init (swoole_socket_coro.cc:810)
+==29268==    by 0x119ACBED: zm_startup_swoole (swoole.cc:839)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119B8F92: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119B8F92: swoole_client_coro_init (swoole_client_coro.cc:139)
+==29268==    by 0x119ACBF4: zm_startup_swoole (swoole.cc:840)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119DC35A: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119DC35A: swoole_mysql_coro_init (swoole_mysql_coro.cc:421)
+==29268==    by 0x119ACC02: zm_startup_swoole (swoole.cc:845)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119DC0AB: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119DC0AB: swoole_mysql_coro_init (swoole_mysql_coro.cc:426)
+==29268==    by 0x119ACC02: zm_startup_swoole (swoole.cc:845)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119C7894: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119C7894: swoole_http_client_coro_init (swoole_http_client_coro.cc:1447)
+==29268==    by 0x119ACC09: zm_startup_swoole (swoole.cc:846)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119BF72C: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119BF72C: swoole_coroutine_util_init (swoole_coroutine_util.cc:279)
+==29268==    by 0x119ACC10: zm_startup_swoole (swoole.cc:847)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119BF6B7: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119BF6B7: swoole_coroutine_util_init (swoole_coroutine_util.cc:284)
+==29268==    by 0x119ACC10: zm_startup_swoole (swoole.cc:847)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119BF62B: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119BF62B: swoole_coroutine_util_init (swoole_coroutine_util.cc:286)
+==29268==    by 0x119ACC10: zm_startup_swoole (swoole.cc:847)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x119E0DBE: sw_zend_register_class_alias (php_swoole.h:805)
+==29268==    by 0x119E0DBE: swoole_process_init (swoole_process.cc:192)
+==29268==    by 0x119ACC1E: zm_startup_swoole (swoole.cc:849)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119E0DD3: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119E0DD3: swoole_process_init (swoole_process.cc:192)
+==29268==    by 0x119ACC1E: zm_startup_swoole (swoole.cc:849)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119E2834: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119E2834: swoole_process_pool_init (swoole_process_pool.cc:82)
+==29268==    by 0x119ACC25: zm_startup_swoole (swoole.cc:850)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A1771D: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A1771D: swoole_table_init (swoole_table.c:255)
+==29268==    by 0x119ACC2C: zm_startup_swoole (swoole.cc:851)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119FCBED: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119FCBED: swoole_runtime_init (swoole_runtime.cc:128)
+==29268==    by 0x119ACC33: zm_startup_swoole (swoole.cc:852)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119D6B4A: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119D6B4A: swoole_lock_init (swoole_lock.c:60)
+==29268==    by 0x119ACC3A: zm_startup_swoole (swoole.cc:853)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119AFD64: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119AFD64: swoole_atomic_init (swoole_atomic.c:147)
+==29268==    by 0x119ACC41: zm_startup_swoole (swoole.cc:854)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119AFE86: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119AFE86: swoole_atomic_init (swoole_atomic.c:152)
+==29268==    by 0x119ACC41: zm_startup_swoole (swoole.cc:854)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119CB19C: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119CB19C: swoole_http_server_init (swoole_http_server.cc:1066)
+==29268==    by 0x119ACC48: zm_startup_swoole (swoole.cc:855)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119CB2E2: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119CB2E2: swoole_http_server_init (swoole_http_server.cc:1073)
+==29268==    by 0x119ACC48: zm_startup_swoole (swoole.cc:855)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119CB4F1: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119CB4F1: swoole_http_server_init (swoole_http_server.cc:1091)
+==29268==    by 0x119ACC48: zm_startup_swoole (swoole.cc:855)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119B0B5A: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119B0B5A: swoole_buffer_init (swoole_buffer.c:81)
+==29268==    by 0x119ACC4F: zm_startup_swoole (swoole.cc:856)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A1A4E3: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A1A4E3: swoole_websocket_init (swoole_websocket_server.cc:419)
+==29268==    by 0x119ACC56: zm_startup_swoole (swoole.cc:857)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x11A1A64E: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x11A1A64E: swoole_websocket_init (swoole_websocket_server.cc:425)
+==29268==    by 0x119ACC56: zm_startup_swoole (swoole.cc:857)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119B14AE: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119B14AE: swoole_channel_coro_init (swoole_channel_coro.cc:124)
+==29268==    by 0x119ACC5D: zm_startup_swoole (swoole.cc:858)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119B159B: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119B159B: swoole_channel_coro_init (swoole_channel_coro.cc:131)
+==29268==    by 0x119ACC5D: zm_startup_swoole (swoole.cc:858)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119D1043: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119D1043: swoole_http2_client_coro_init (swoole_http_v2_client_coro.cc:135)
+==29268==    by 0x119ACC64: zm_startup_swoole (swoole.cc:860)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119D1140: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119D1140: swoole_http2_client_coro_init (swoole_http_v2_client_coro.cc:137)
+==29268==    by 0x119ACC64: zm_startup_swoole (swoole.cc:860)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119D1264: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119D1264: swoole_http2_client_coro_init (swoole_http_v2_client_coro.cc:142)
+==29268==    by 0x119ACC64: zm_startup_swoole (swoole.cc:860)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880686: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880686: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880686: zend_new_interned_string_permanent.part.5 (zend_string.c:196)
+==29268==    by 0x85F032: zend_register_class_alias_ex (zend_API.c:2804)
+==29268==    by 0x119F877C: sw_zend_register_class_alias (php_swoole.h:808)
+==29268==    by 0x119F877C: swoole_redis_server_init (swoole_redis_server.cc:69)
+==29268==    by 0x119ACC72: zm_startup_swoole (swoole.cc:865)
+==29268==    by 0x85CC64: zend_startup_module_ex (zend_API.c:1878)
+==29268==    by 0x85CCFB: zend_startup_module_zval (zend_API.c:1893)
+==29268==    by 0x868EC2: zend_hash_apply (zend_hash.c:1689)
+==29268==    by 0x85CFA9: zend_startup_modules (zend_API.c:2004)
+==29268==    by 0x7FD07D: php_module_startup (main.c:2342)
+==29268==    by 0x8DFFCC: php_cli_startup (php_cli.c:420)
+==29268==    by 0x451503: main (php_cli.c:1360)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x844271: zend_hash_find_ptr (zend_hash.h:792)
+==29268==    by 0x844271: zend_compile_call (zend_compile.c:4016)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x842AAE: zend_compile_unary_op (zend_compile.c:7223)
+==29268==    by 0x8404A6: zend_compile_expr (zend_compile.c:8373)
+==29268==    by 0x848D57: zend_compile_if (zend_compile.c:4906)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x838FE5: zend_emit_op (zend_compile.c:2125)
+==29268==    by 0x8443C7: zend_compile_call (zend_compile.c:4046)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x842AAE: zend_compile_unary_op (zend_compile.c:7223)
+==29268==    by 0x8404A6: zend_compile_expr (zend_compile.c:8373)
+==29268==    by 0x848D57: zend_compile_if (zend_compile.c:4906)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x845245: zend_delayed_emit_op (zend_compile.c:2271)
+==29268==    by 0x845245: zend_delayed_compile_dim (zend_compile.c:2666)
+==29268==    by 0x8452B5: zend_compile_dim (zend_compile.c:2679)
+==29268==    by 0x844B58: zend_compile_coalesce (zend_compile.c:7443)
+==29268==    by 0x84065E: zend_compile_expr (zend_compile.c:8398)
+==29268==    by 0x844E65: zend_compile_array (zend_compile.c:7728)
+==29268==    by 0x84057E: zend_compile_expr (zend_compile.c:8429)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x84116C: zend_compile_simple_var (zend_compile.c:2610)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x846242: zend_compile_foreach (zend_compile.c:4829)
+==29268==    by 0x846AC7: zend_compile_stmt (zend_compile.c:8269)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x846676: zend_compile_foreach (zend_compile.c:4847)
+==29268==    by 0x846AC7: zend_compile_stmt (zend_compile.c:8269)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x84116C: zend_compile_simple_var (zend_compile.c:2610)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84277E: zend_compile_binary_op (zend_compile.c:7134)
+==29268==    by 0x840680: zend_compile_expr (zend_compile.c:8366)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x839EB5: zend_hash_find_ptr (zend_hash.h:792)
+==29268==    by 0x839EB5: zend_hash_find_ptr_lc (zend_compile.c:845)
+==29268==    by 0x83ADCD: zend_resolve_class_name (zend_compile.c:958)
+==29268==    by 0x840D6B: zend_compile_class_ref_ex (zend_compile.c:2521)
+==29268==    by 0x84458E: zend_compile_static_call (zend_compile.c:4119)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x843ADF: zend_compile_args (zend_compile.c:3226)
+==29268==    by 0x843CC6: zend_compile_call_common (zend_compile.c:3318)
+==29268==    by 0x844626: zend_compile_static_call (zend_compile.c:4180)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x8454D4: zend_compile_unset (zend_compile.c:4340)
+==29268==    by 0x846B17: zend_compile_stmt (zend_compile.c:8238)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x8395BD: zend_add_literal_string (zend_compile.c:515)
+==29268==    by 0x8395BD: zend_add_func_name_literal (zend_compile.c:524)
+==29268==    by 0x8446F9: zend_compile_static_call (zend_compile.c:4140)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x839662: zend_add_literal_string (zend_compile.c:515)
+==29268==    by 0x839662: zend_add_class_name_literal (zend_compile.c:564)
+==29268==    by 0x844729: zend_set_class_name_op1 (zend_compile.c:2467)
+==29268==    by 0x844729: zend_compile_static_call (zend_compile.c:4136)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86A9C4: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86A9C4: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86A9C4: zend_hash_find (zend_hash.c:2092)
+==29268==    by 0x839F73: zend_hash_find_ptr (zend_hash.h:792)
+==29268==    by 0x839F73: zend_try_ct_eval_const (zend_compile.c:1383)
+==29268==    by 0x83E389: zend_compile_const (zend_compile.c:7784)
+==29268==    by 0x8406F4: zend_compile_expr (zend_compile.c:8432)
+==29268==    by 0x84277E: zend_compile_binary_op (zend_compile.c:7134)
+==29268==    by 0x840680: zend_compile_expr (zend_compile.c:8366)
+==29268==    by 0x848D57: zend_compile_if (zend_compile.c:4906)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x8454D4: zend_compile_unset (zend_compile.c:4340)
+==29268==    by 0x846B17: zend_compile_stmt (zend_compile.c:8238)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x8395BD: zend_add_literal_string (zend_compile.c:515)
+==29268==    by 0x8395BD: zend_add_func_name_literal (zend_compile.c:524)
+==29268==    by 0x8446F9: zend_compile_static_call (zend_compile.c:4140)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838D18: zend_set_compiled_filename (zend_compile.c:396)
+==29268==    by 0x8247B5: open_file_for_scanning (zend_language_scanner.l:562)
+==29268==    by 0x8249F3: compile_file (zend_language_scanner.l:629)
+==29268==    by 0x6B4A77: phar_compile_file (phar.c:3348)
+==29268==    by 0x89D09B: zend_include_or_eval (zend_execute.c:3162)
+==29268==    by 0x8D0B0C: ZEND_INCLUDE_OR_EVAL_SPEC_CONST_HANDLER (zend_vm_execute.h:3259)
+==29268==    by 0x8D6FF4: execute_ex (zend_vm_execute.h:55813)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x8476A7: zend_compile_class_decl (zend_compile.c:6367)
+==29268==    by 0x846B27: zend_compile_stmt (zend_compile.c:8297)
+==29268==    by 0x8497F9: zend_compile_top_stmt (zend_compile.c:8203)
+==29268==    by 0x84983E: zend_compile_top_stmt (zend_compile.c:8198)
+==29268==    by 0x823689: zend_compile (zend_language_scanner.l:603)
+==29268==    by 0x824A02: compile_file (zend_language_scanner.l:637)
+==29268==    by 0x6B4A77: phar_compile_file (phar.c:3348)
+==29268==    by 0x89D09B: zend_include_or_eval (zend_execute.c:3162)
+==29268==    by 0x8D0B0C: ZEND_INCLUDE_OR_EVAL_SPEC_CONST_HANDLER (zend_vm_execute.h:3259)
+==29268==    by 0x8D6FF4: execute_ex (zend_vm_execute.h:55813)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x847714: zend_compile_class_decl (zend_compile.c:6384)
+==29268==    by 0x846B27: zend_compile_stmt (zend_compile.c:8297)
+==29268==    by 0x8497F9: zend_compile_top_stmt (zend_compile.c:8203)
+==29268==    by 0x84983E: zend_compile_top_stmt (zend_compile.c:8198)
+==29268==    by 0x823689: zend_compile (zend_language_scanner.l:603)
+==29268==    by 0x824A02: compile_file (zend_language_scanner.l:637)
+==29268==    by 0x6B4A77: phar_compile_file (phar.c:3348)
+==29268==    by 0x89D09B: zend_include_or_eval (zend_execute.c:3162)
+==29268==    by 0x8D0B0C: ZEND_INCLUDE_OR_EVAL_SPEC_CONST_HANDLER (zend_vm_execute.h:3259)
+==29268==    by 0x8D6FF4: execute_ex (zend_vm_execute.h:55813)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x83FE71: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83FE71: zend_compile_prop_decl (zend_compile.c:6117)
+==29268==    by 0x8468A1: zend_compile_stmt (zend_compile.c:8288)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x84790A: zend_compile_class_decl (zend_compile.c:6495)
+==29268==    by 0x846B27: zend_compile_stmt (zend_compile.c:8297)
+==29268==    by 0x8497F9: zend_compile_top_stmt (zend_compile.c:8203)
+==29268==    by 0x84983E: zend_compile_top_stmt (zend_compile.c:8198)
+==29268==    by 0x823689: zend_compile (zend_language_scanner.l:603)
+==29268==    by 0x824A02: compile_file (zend_language_scanner.l:637)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x83F77C: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83F77C: zend_compile_params (zend_compile.c:5541)
+==29268==    by 0x848150: zend_compile_func_decl (zend_compile.c:6066)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x84790A: zend_compile_class_decl (zend_compile.c:6495)
+==29268==    by 0x846B27: zend_compile_stmt (zend_compile.c:8297)
+==29268==    by 0x8497F9: zend_compile_top_stmt (zend_compile.c:8203)
+==29268==    by 0x84983E: zend_compile_top_stmt (zend_compile.c:8198)
+==29268==    by 0x823689: zend_compile (zend_language_scanner.l:603)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x83CF4D: zend_begin_method_decl (zend_compile.c:5821)
+==29268==    by 0x848109: zend_compile_func_decl (zend_compile.c:6041)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x84790A: zend_compile_class_decl (zend_compile.c:6495)
+==29268==    by 0x846B27: zend_compile_stmt (zend_compile.c:8297)
+==29268==    by 0x8497F9: zend_compile_top_stmt (zend_compile.c:8203)
+==29268==    by 0x84983E: zend_compile_top_stmt (zend_compile.c:8198)
+==29268==    by 0x823689: zend_compile (zend_language_scanner.l:603)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x838FCC: zend_emit_op (zend_compile.c:2121)
+==29268==    by 0x840F71: zend_compile_static_prop (zend_compile.c:2734)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84278C: zend_compile_binary_op (zend_compile.c:7135)
+==29268==    by 0x840680: zend_compile_expr (zend_compile.c:8366)
+==29268==    by 0x848D57: zend_compile_if (zend_compile.c:4906)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x840FC4: zend_delayed_emit_op (zend_compile.c:2268)
+==29268==    by 0x840FC4: zend_compile_static_prop (zend_compile.c:2732)
+==29268==    by 0x8459AD: zend_compile_assign (zend_compile.c:2983)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8805C6: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8805C6: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x8805C6: zend_new_interned_string_request (zend_string.c:230)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x83962D: zend_add_literal_string (zend_compile.c:515)
+==29268==    by 0x83962D: zend_add_class_name_literal (zend_compile.c:560)
+==29268==    by 0x847FC9: zend_compile_new (zend_compile.c:4213)
+==29268==    by 0x840714: zend_compile_expr (zend_compile.c:8357)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x841429: zend_compile_init_user_func (zend_compile.c:3584)
+==29268==    by 0x841718: zend_compile_func_cuf (zend_compile.c:3647)
+==29268==    by 0x8421D1: zend_try_compile_special_func (zend_compile.c:3961)
+==29268==    by 0x8442AC: zend_compile_call (zend_compile.c:4035)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x83B40F: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x83B40F: zend_try_compile_cv.isra.44 (zend_compile.c:2538)
+==29268==    by 0x843ADF: zend_compile_args (zend_compile.c:3226)
+==29268==    by 0x843CC6: zend_compile_call_common (zend_compile.c:3318)
+==29268==    by 0x8444A1: zend_compile_method_call (zend_compile.c:4099)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x846436: zend_compile_foreach (zend_compile.c:4868)
+==29268==    by 0x846AC7: zend_compile_stmt (zend_compile.c:8269)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x880456: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x880456: zend_interned_string_ht_lookup (zend_string.c:156)
+==29268==    by 0x880456: zend_new_interned_string_request (zend_string.c:224)
+==29268==    by 0x838ECC: zval_make_interned_string (zend_compile.c:473)
+==29268==    by 0x838ECC: zend_insert_literal (zend_compile.c:485)
+==29268==    by 0x838ECC: zend_add_literal (zend_compile.c:505)
+==29268==    by 0x838FCC: zend_emit_op (zend_compile.c:2121)
+==29268==    by 0x840F71: zend_compile_static_prop (zend_compile.c:2734)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x8459B8: zend_compile_assign (zend_compile.c:2984)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268== 
+==29268== 
+==29268== More than 100 errors detected.  Subsequent errors
+==29268== will still be recorded, but in less detail than before.
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x850CB1: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x850CB1: zend_string_equals (zend_string.h:315)
+==29268==    by 0x850CB1: zend_is_identical (zend_operators.c:2220)
+==29268==    by 0x8A0216: fast_is_identical_function (zend_operators.h:791)
+==29268==    by 0x8A0216: ZEND_IS_IDENTICAL_SPEC_TMP_CONST_HANDLER (zend_vm_execute.h:18383)
+==29268==    by 0x8DA184: execute_ex (zend_vm_execute.h:57439)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86AA3D: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86AA3D: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86AA3D: _zend_hash_find_known_hash (zend_hash.c:2102)
+==29268==    by 0x8AE9C2: zend_hash_find_ex (zend_hash.h:177)
+==29268==    by 0x8AE9C2: zend_fetch_dimension_address_inner (zend_execute.c:1719)
+==29268==    by 0x8AE9C2: ZEND_FETCH_DIM_R_SPEC_TMPVAR_CONST_HANDLER (zend_vm_execute.h:13471)
+==29268==    by 0x8DA7A8: execute_ex (zend_vm_execute.h:56969)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x83C033: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x83C033: zend_string_equals (zend_string.h:315)
+==29268==    by 0x83C033: zend_is_assign_to_self (zend_compile.c:2909)
+==29268==    by 0x845A58: zend_compile_assign (zend_compile.c:2992)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848D97: zend_compile_if (zend_compile.c:4910)
+==29268==    by 0x846B07: zend_compile_stmt (zend_compile.c:8272)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x129FCF2C: ???
+==29268==    by 0x129FCF27: ???
+==29268==    by 0x129FCF36: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x129FCF27: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12A2449C: ???
+==29268==    by 0x12A24497: ???
+==29268==    by 0x12A244A1: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12A24497: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12A4A02C: ???
+==29268==    by 0x12A4A027: ???
+==29268==    by 0x12A4A033: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12A4A027: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x12A16CB0: ???
+==29268==    by 0x12A16CA7: ???
+==29268==    by 0x12A16CB8: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12A16CA7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12A595DC: ???
+==29268==    by 0x12A595D7: ???
+==29268==    by 0x12A595E6: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12A595D7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x124C319C: ???
+==29268==    by 0x124C3197: ???
+==29268==    by 0x124C31A6: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x124C3197: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x124C361C: ???
+==29268==    by 0x124C3617: ???
+==29268==    by 0x124C3626: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x124C3617: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x128ECE4C: ???
+==29268==    by 0x128ECE47: ???
+==29268==    by 0x128ECE57: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x128ECE47: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x86AD04: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x86AD04: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x86AD04: zend_hash_exists (zend_hash.c:2124)
+==29268==    by 0x86D0F1: zif_extension_loaded (zend_builtin_functions.c:2698)
+==29268==    by 0x8DC386: ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER (zend_vm_execute.h:896)
+==29268==    by 0x8DC386: execute_ex (zend_vm_execute.h:55523)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12A8962C: ???
+==29268==    by 0x12A89627: ???
+==29268==    by 0x12A8963B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12A89627: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12CC4D4C: ???
+==29268==    by 0x12CC4D47: ???
+==29268==    by 0x12CC4D54: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12CC4D47: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8C2016: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8C2016: zend_fast_equal_strings (zend_operators.h:734)
+==29268==    by 0x8C2016: ZEND_IS_NOT_EQUAL_SPEC_CV_TMPVAR_HANDLER (zend_vm_execute.h:42682)
+==29268==    by 0x8D880E: execute_ex (zend_vm_execute.h:59947)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8893FB: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8893FB: zend_get_property_guard (zend_object_handlers.c:580)
+==29268==    by 0x889E23: zend_std_read_property (zend_object_handlers.c:704)
+==29268==    by 0x8DCFAE: ZEND_FETCH_OBJ_R_SPEC_CV_CONST_HANDLER (zend_vm_execute.h:39891)
+==29268==    by 0x8DCFAE: execute_ex (zend_vm_execute.h:59775)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8425DF: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8425DF: zend_string_equals (zend_string.h:315)
+==29268==    by 0x8425DF: zend_compile_closure_uses (zend_compile.c:5770)
+==29268==    by 0x84816B: zend_compile_func_decl (zend_compile.c:6072)
+==29268==    by 0x840784: zend_compile_expr (zend_compile.c:8444)
+==29268==    by 0x8438E7: zend_compile_args (zend_compile.c:3238)
+==29268==    by 0x843CC6: zend_compile_call_common (zend_compile.c:3318)
+==29268==    by 0x8444A1: zend_compile_method_call (zend_compile.c:4099)
+==29268==    by 0x8408B0: zend_compile_expr (zend_compile.c:8348)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x83C14D: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x83C14D: zend_string_equals (zend_string.h:315)
+==29268==    by 0x83C14D: zend_list_has_assign_to (zend_compile.c:2938)
+==29268==    by 0x83C1A6: zend_list_has_assign_to_self.part.47 (zend_compile.c:2956)
+==29268==    by 0x845B5A: zend_list_has_assign_to_self (zend_compile.c:2998)
+==29268==    by 0x845B5A: zend_compile_assign (zend_compile.c:3036)
+==29268==    by 0x8404FA: zend_compile_expr (zend_compile.c:8351)
+==29268==    by 0x84687E: zend_compile_stmt (zend_compile.c:8317)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268==    by 0x848175: zend_compile_func_decl (zend_compile.c:6074)
+==29268==    by 0x846B89: zend_compile_stmt (zend_compile.c:8285)
+==29268==    by 0x8475C6: zend_compile_stmt_list (zend_compile.c:5438)
+==29268==    by 0x846A0D: zend_compile_stmt (zend_compile.c:8229)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x1288630C: ???
+==29268==    by 0x128862F7: ???
+==29268==    by 0x12886327: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x128862F7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x133C68DC: ???
+==29268==    by 0x133C68C7: ???
+==29268==    by 0x133C68F7: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x133C68C7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x1388FC8C: ???
+==29268==    by 0x1388FC77: ???
+==29268==    by 0x1388FCA9: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x1388FC77: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x125C782C: ???
+==29268==    by 0x125C7817: ???
+==29268==    by 0x125C7842: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x125C7817: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x12988F5C: ???
+==29268==    by 0x12988F57: ???
+==29268==    by 0x12988F69: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12988F57: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13346C77: ???
+==29268==    by 0x13346C77: ???
+==29268==    by 0x13346C7B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13346C77: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x1352CEBF: ???
+==29268==    by 0x1352CEB7: ???
+==29268==    by 0x1352CEC3: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x1352CEB7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x123E5C4C: ???
+==29268==    by 0x123E5C47: ???
+==29268==    by 0x123E5C54: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x123E5C47: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B9: ???
+==29268==    by 0x123E5C4C: ???
+==29268==    by 0x123E5C47: ???
+==29268==    by 0x123E5C54: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x123E5C47: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x12C12AB7: ???
+==29268==    by 0x12C12AB7: ???
+==29268==    by 0x12C12ABB: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12C12AB7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x12C85217: ???
+==29268==    by 0x12C85217: ???
+==29268==    by 0x12C8521B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12C85217: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x12C756C7: ???
+==29268==    by 0x12C756C7: ???
+==29268==    by 0x12C756CB: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12C756C7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x12C88327: ???
+==29268==    by 0x12C88327: ???
+==29268==    by 0x12C8832B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12C88327: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13A9CF2F: ???
+==29268==    by 0x13A9CF27: ???
+==29268==    by 0x13A9CF33: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13A9CF27: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13B02D5F: ???
+==29268==    by 0x13B02D57: ???
+==29268==    by 0x13B02D63: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13B02D57: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13D57B24: ???
+==29268==    by 0x13D57B17: ???
+==29268==    by 0x13D57B28: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13D57B17: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x132186BC: ???
+==29268==    by 0x132186A7: ???
+==29268==    by 0x132186CD: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x132186A7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x880392: zend_string_equal_val (zend_string.c:417)
+==29268==    by 0x8659FB: zend_string_equal_content (zend_string.h:310)
+==29268==    by 0x8659FB: zend_hash_find_bucket (zend_hash.c:587)
+==29268==    by 0x8659FB: _zend_hash_add_or_update_i (zend_hash.c:670)
+==29268==    by 0x8659FB: zend_hash_update_ind (zend_hash.c:822)
+==29268==    by 0x43C875: process_nested_data (var_unserializer.c:488)
+==29268==    by 0x43C875: object_common2.part.10 (var_unserializer.c:606)
+==29268==    by 0x7B3BF7: object_common2 (var_unserializer.c:593)
+==29268==    by 0x7B3BF7: php_var_unserialize_internal (var_unserializer.c:1402)
+==29268==    by 0x7A4625: zif_unserialize (var.c:1126)
+==29268==    by 0x8DC386: ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER (zend_vm_execute.h:896)
+==29268==    by 0x8DC386: execute_ex (zend_vm_execute.h:55523)
+==29268==    by 0x8DED37: zend_execute (zend_vm_execute.h:60939)
+==29268==    by 0x859B63: zend_execute_scripts (zend.c:1568)
+==29268==    by 0x7FDADF: php_execute_script (main.c:2639)
+==29268==    by 0x8E1124: do_cli (php_cli.c:997)
+==29268==    by 0x45169F: main (php_cli.c:1393)
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14C18D9C: ???
+==29268==    by 0x14C18D87: ???
+==29268==    by 0x14C18DB3: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14C18D87: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14CE8E1C: ???
+==29268==    by 0x14CE8E17: ???
+==29268==    by 0x14CE8E27: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14CE8E17: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14B9A6BC: ???
+==29268==    by 0x14B9A6A7: ???
+==29268==    by 0x14B9A6C4: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14B9A6A7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14A114FC: ???
+==29268==    by 0x14A114E7: ???
+==29268==    by 0x14A1150C: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14A114E7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x14CDB237: ???
+==29268==    by 0x14CDB237: ???
+==29268==    by 0x14CDB23B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14CDB237: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x1330B397: ???
+==29268==    by 0x1330B397: ???
+==29268==    by 0x1330B39B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x1330B397: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x136F04DF: ???
+==29268==    by 0x136F04D7: ???
+==29268==    by 0x136F04E3: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x136F04D7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14B99F7C: ???
+==29268==    by 0x14B99F67: ???
+==29268==    by 0x14B99F94: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14B99F67: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x14B9B427: ???
+==29268==    by 0x14B9B427: ???
+==29268==    by 0x14B9B42B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14B9B427: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x14BFA017: ???
+==29268==    by 0x14BFA017: ???
+==29268==    by 0x14BFA01B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14BFA017: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x14C5A84F: ???
+==29268==    by 0x14C5A847: ???
+==29268==    by 0x14C5A853: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14C5A847: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x139FCBFC: ???
+==29268==    by 0x139FCBE7: ???
+==29268==    by 0x139FCC12: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x139FCBE7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13A4D0B7: ???
+==29268==    by 0x13A4D0B7: ???
+==29268==    by 0x13A4D0BB: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13A4D0B7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13E74927: ???
+==29268==    by 0x13E74927: ???
+==29268==    by 0x13E7492B: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13E74927: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x13E8851F: ???
+==29268==    by 0x13E88517: ???
+==29268==    by 0x13E88523: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13E88517: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x13ED0A6C: ???
+==29268==    by 0x13ED0A57: ???
+==29268==    by 0x13ED0A81: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13ED0A57: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14D421BC: ???
+==29268==    by 0x14D421A7: ???
+==29268==    by 0x14D421D8: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14D421A7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x130271CC: ???
+==29268==    by 0x130271B7: ???
+==29268==    by 0x130271E2: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x130271B7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x129819AC: ???
+==29268==    by 0x12981997: ???
+==29268==    by 0x129819D6: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x12981997: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x14A5F04C: ???
+==29268==    by 0x14A5F037: ???
+==29268==    by 0x14A5F052: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14A5F037: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x1257FC3C: ???
+==29268==    by 0x1257FC27: ???
+==29268==    by 0x1257FC51: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x1257FC27: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x125C30AC: ???
+==29268==    by 0x125C3097: ???
+==29268==    by 0x125C30CD: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x125C3097: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x13B940CC: ???
+==29268==    by 0x13B940B7: ???
+==29268==    by 0x13B940E2: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13B940B7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x1393155C: ???
+==29268==    by 0x13931547: ???
+==29268==    by 0x13931567: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13931547: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x13A6577C: ???
+==29268==    by 0x13A65767: ???
+==29268==    by 0x13A65790: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x13A65767: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0xAD8315C: ???
+==29268==    by 0xAD83147: ???
+==29268==    by 0xAD83184: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0xAD83147: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E0B1: ???
+==29268==    by 0x1491670C: ???
+==29268==    by 0x149166F7: ???
+==29268==    by 0x14916724: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x149166F7: ???
+==29268== 
+==29268== Conditional jump or move depends on uninitialised value(s)
+==29268==    at 0x406E090: ???
+==29268==    by 0x14BE28D4: ???
+==29268==    by 0x14BE28C7: ???
+==29268==    by 0x14BE28DA: ???
+==29268==    by 0xAF3622F: ???
+==29268==    by 0x14BE28C7: ???
+==29268== 
+==29271== Conditional jump or move depends on uninitialised value(s)
+==29271==    at 0x406E0B1: ???
+==29271==    by 0x1411657C: ???
+==29271==    by 0x14116567: ???
+==29271==    by 0x14116597: ???
+==29271==    by 0xAF3622F: ???
+==29271==    by 0x14116567: ???
+==29271== 
+==29271== Conditional jump or move depends on uninitialised value(s)
+==29271==    at 0x406E090: ???
+==29271==    by 0x1452EA44: ???
+==29271==    by 0x1452EA37: ???
+==29271==    by 0x1452EA4B: ???
+==29271==    by 0xAF3622F: ???
+==29271==    by 0x1452EA37: ???
+==29271== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x14432D24: ???
+==29274==    by 0x14432D17: ???
+==29274==    by 0x14432D2B: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x14432D17: ???
+==29274== 
+==29273== Warning: client switching stacks?  SP change: 0x1ffeffc990 --> 0x15f838b8
+==29273==          to suppress, use: --max-stackframe=137053573336 or greater
+==29274== Warning: client switching stacks?  SP change: 0x1ffeffc7d0 --> 0x15f838b8
+==29274==          to suppress, use: --max-stackframe=137053572888 or greater
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14BFC5DC: ???
+==29273==    by 0x14BFC5C7: ???
+==29273==    by 0x14BFC5FA: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14BFC5C7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1503792C: ???
+==29273==    by 0x15037927: ???
+==29273==    by 0x15037931: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x15037927: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1375647C: ???
+==29273==    by 0x13756477: ???
+==29273==    by 0x13756483: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13756477: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13E0310C: ???
+==29273==    by 0x13E03107: ???
+==29273==    by 0x13E03116: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13E03107: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x143D6F17: ???
+==29273==    by 0x143D6F17: ???
+==29273==    by 0x143D6F1B: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x143D6F17: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x14405044: ???
+==29273==    by 0x14405037: ???
+==29273==    by 0x1440504A: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14405037: ???
+==29273== 
+==29274== Warning: client switching stacks?  SP change: 0x1ffeffc3d0 --> 0x15f82570
+==29274==          to suppress, use: --max-stackframe=137053576800 or greater
+==29274== Warning: client switching stacks?  SP change: 0x15f82560 --> 0x1ffeffc3d0
+==29274==          to suppress, use: --max-stackframe=137053576816 or greater
+==29274==          further instances of this message will not be shown.
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x13002F44: ???
+==29274==    by 0x13002F37: ???
+==29274==    by 0x13002F4C: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x13002F37: ???
+==29274== 
+==29273== Warning: client switching stacks?  SP change: 0x1ffeffc5a0 --> 0x15f836d0
+==29273==          to suppress, use: --max-stackframe=137053572816 or greater
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1381F12C: ???
+==29273==    by 0x1381F117: ???
+==29273==    by 0x1381F143: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1381F117: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13D9C20C: ???
+==29273==    by 0x13D9C1F7: ???
+==29273==    by 0x13D9C227: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13D9C1F7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x124D0DCC: ???
+==29273==    by 0x124D0DC7: ???
+==29273==    by 0x124D0DD1: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x124D0DC7: ???
+==29273== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x14FFDF2C: ???
+==29274==    by 0x14FFDF17: ???
+==29274==    by 0x14FFDF43: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x14FFDF17: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x1287969C: ???
+==29274==    by 0x12879687: ???
+==29274==    by 0x128796B7: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x12879687: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x124D0DCC: ???
+==29274==    by 0x124D0DC7: ???
+==29274==    by 0x124D0DD1: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x124D0DC7: ???
+==29274== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x12F151B7: ???
+==29273==    by 0x12F151B7: ???
+==29273==    by 0x12F151BB: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12F151B7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x13490EF7: ???
+==29273==    by 0x13490EF7: ???
+==29273==    by 0x13490EFB: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13490EF7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x134913DF: ???
+==29273==    by 0x134913D7: ???
+==29273==    by 0x134913E3: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x134913D7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x136C5BFF: ???
+==29273==    by 0x136C5BF7: ???
+==29273==    by 0x136C5C03: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x136C5BF7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x124D6A8C: ???
+==29273==    by 0x124D6A87: ???
+==29273==    by 0x124D6A92: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x124D6A87: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x1389BDE7: ???
+==29273==    by 0x1389BDE7: ???
+==29273==    by 0x1389BDEB: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1389BDE7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x13E9001F: ???
+==29273==    by 0x13E90017: ???
+==29273==    by 0x13E90023: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13E90017: ???
+==29273== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x138F8167: ???
+==29274==    by 0x138F8167: ???
+==29274==    by 0x138F816B: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x138F8167: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x138F8477: ???
+==29274==    by 0x138F8477: ???
+==29274==    by 0x138F847B: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x138F8477: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0xAFABB8F: ???
+==29274==    by 0xAFABB87: ???
+==29274==    by 0xAFABB93: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0xAFABB87: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x1282EC2F: ???
+==29274==    by 0x1282EC27: ???
+==29274==    by 0x1282EC33: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x1282EC27: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x124D6A8C: ???
+==29274==    by 0x124D6A87: ???
+==29274==    by 0x124D6A92: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x124D6A87: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x12FC6117: ???
+==29274==    by 0x12FC6117: ???
+==29274==    by 0x12FC611B: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x12FC6117: ???
+==29274== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E090: ???
+==29274==    by 0x12FC65FF: ???
+==29274==    by 0x12FC65F7: ???
+==29274==    by 0x12FC6603: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x12FC65F7: ???
+==29274== 
+==29273== Warning: client switching stacks?  SP change: 0x15f82600 --> 0x1ffeffc5a0
+==29273==          to suppress, use: --max-stackframe=137053577120 or greater
+==29273==          further instances of this message will not be shown.
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14F76E9C: ???
+==29273==    by 0x14F76E87: ???
+==29273==    by 0x14F76EC2: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14F76E87: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1290690C: ???
+==29273==    by 0x129068F7: ???
+==29273==    by 0x12906931: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x129068F7: ???
+==29273== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x14EBA89C: ???
+==29274==    by 0x14EBA887: ???
+==29274==    by 0x14EBA8A5: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x14EBA887: ???
+==29274== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14DF42BC: ???
+==29273==    by 0x14DF42A7: ???
+==29273==    by 0x14DF42EA: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14DF42A7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12CFE1CC: ???
+==29273==    by 0x12CFE1B7: ???
+==29273==    by 0x12CFE1D8: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12CFE1B7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13A3276C: ???
+==29273==    by 0x13A32757: ???
+==29273==    by 0x13A32793: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13A32757: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12C3F73C: ???
+==29273==    by 0x12C3F727: ???
+==29273==    by 0x12C3F745: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12C3F727: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12E8759C: ???
+==29273==    by 0x12E87587: ???
+==29273==    by 0x12E875BB: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12E87587: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x13005DD4: ???
+==29273==    by 0x13005DC7: ???
+==29273==    by 0x13005DDC: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13005DC7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x13BB837F: ???
+==29273==    by 0x13BB8367: ???
+==29273==    by 0x13BB8388: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13BB8367: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x145E984C: ???
+==29273==    by 0x145E9837: ???
+==29273==    by 0x145E9877: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x145E9837: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x14E6D26F: ???
+==29273==    by 0x14E6D257: ???
+==29273==    by 0x14E6D278: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14E6D257: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E090: ???
+==29273==    by 0x14E6F28F: ???
+==29273==    by 0x14E6F287: ???
+==29273==    by 0x14E6F293: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14E6F287: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12DD6B2C: ???
+==29273==    by 0x12DD6B17: ???
+==29273==    by 0x12DD6B52: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12DD6B17: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12DD3ABC: ???
+==29273==    by 0x12DD3AA7: ???
+==29273==    by 0x12DD3AD9: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12DD3AA7: ???
+==29273== 
+==29274== Conditional jump or move depends on uninitialised value(s)
+==29274==    at 0x406E0B1: ???
+==29274==    by 0x125FA8EC: ???
+==29274==    by 0x125FA8D7: ???
+==29274==    by 0x125FA90B: ???
+==29274==    by 0xAF3622F: ???
+==29274==    by 0x125FA8D7: ???
+==29274== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x143C2601: ???
+==29273==    by 0x143C25F7: ???
+==29273==    by 0x143C2610: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x143C25F7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13E1616C: ???
+==29273==    by 0x13E16157: ???
+==29273==    by 0x13E1617A: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13E16157: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14BB9CEC: ???
+==29273==    by 0x14BB9CD7: ???
+==29273==    by 0x14BB9D11: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14BB9CD7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14EB53FC: ???
+==29273==    by 0x14EB53E7: ???
+==29273==    by 0x14EB5411: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14EB53E7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12BA2C8C: ???
+==29273==    by 0x12BA2C77: ???
+==29273==    by 0x12BA2C9A: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12BA2C77: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12AFC7CC: ???
+==29273==    by 0x12AFC7B7: ???
+==29273==    by 0x12AFC7D9: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12AFC7B7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12CF114C: ???
+==29273==    by 0x12CF1137: ???
+==29273==    by 0x12CF1159: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12CF1137: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1247F3DC: ???
+==29273==    by 0x1247F3C7: ???
+==29273==    by 0x1247F3E7: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1247F3C7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0xB09BB0C: ???
+==29273==    by 0xB09BAF7: ???
+==29273==    by 0xB09BB28: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xB09BAF7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x124A7DFC: ???
+==29273==    by 0x124A7DE7: ???
+==29273==    by 0x124A7E0B: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x124A7DE7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0xAE7083C: ???
+==29273==    by 0xAE70827: ???
+==29273==    by 0xAE70866: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xAE70827: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B9: ???
+==29273==    by 0xAE7083C: ???
+==29273==    by 0xAE70827: ???
+==29273==    by 0xAE70866: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xAE70827: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1282229C: ???
+==29273==    by 0x12822287: ???
+==29273==    by 0x128222C5: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12822287: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x40CD3FC: ???
+==29273==    by 0xB0D54C7: ???
+==29273==    by 0xB0D54C7: ???
+==29273==    by 0xB0D54C9: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xB0D54C7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0xB129F4C: ???
+==29273==    by 0xB129F37: ???
+==29273==    by 0xB129F60: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xB129F37: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1249ACFC: ???
+==29273==    by 0x1249ACE7: ???
+==29273==    by 0x1249AD2B: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1249ACE7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13F8276C: ???
+==29273==    by 0x13F82757: ???
+==29273==    by 0x13F8277C: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13F82757: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x123E430C: ???
+==29273==    by 0x123E42F7: ???
+==29273==    by 0x123E4337: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x123E42F7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x13D477BC: ???
+==29273==    by 0x13D477A7: ???
+==29273==    by 0x13D477C0: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x13D477A7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1244EF7C: ???
+==29273==    by 0x1244EF67: ???
+==29273==    by 0x1244EF90: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1244EF67: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x14CAEBAC: ???
+==29273==    by 0x14CAEB97: ???
+==29273==    by 0x14CAEBB4: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x14CAEB97: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0xAF313CC: ???
+==29273==    by 0xAF313B7: ???
+==29273==    by 0xAF313E6: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0xAF313B7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12A1CC6C: ???
+==29273==    by 0x12A1CC57: ???
+==29273==    by 0x12A1CC74: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12A1CC57: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12568CFC: ???
+==29273==    by 0x12568CE7: ???
+==29273==    by 0x12568D18: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12568CE7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1391A1DC: ???
+==29273==    by 0x1391A1C7: ???
+==29273==    by 0x1391A1E3: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1391A1C7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12CABB0C: ???
+==29273==    by 0x12CABAF7: ???
+==29273==    by 0x12CABB27: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12CABAF7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x12F5B15C: ???
+==29273==    by 0x12F5B147: ???
+==29273==    by 0x12F5B16C: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x12F5B147: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x129D95BC: ???
+==29273==    by 0x129D95A7: ???
+==29273==    by 0x129D95E6: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x129D95A7: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x144A6F1C: ???
+==29273==    by 0x144A6F07: ???
+==29273==    by 0x144A6F2D: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x144A6F07: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1358BE1C: ???
+==29273==    by 0x1358BE07: ???
+==29273==    by 0x1358BE47: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1358BE07: ???
+==29273== 
+==29273== Conditional jump or move depends on uninitialised value(s)
+==29273==    at 0x406E0B1: ???
+==29273==    by 0x1290C68C: ???
+==29273==    by 0x1290C677: ???
+==29273==    by 0x1290C6B7: ???
+==29273==    by 0xAF3622F: ???
+==29273==    by 0x1290C677: ???
+==29273== 
